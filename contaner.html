@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+   <style>
+        *{
+    
+            margin: 0;
+            padding: 0
+        }
+/* .container{
+    width: 100%;
+    padding: 0px 5%;
+    background-color: aqua;
+} */
+        .instagram__item {
+  height: 300px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+.instagram__item:hover::after {
+  opacity: 1;
+}
+.instagram__item:hover .instagram__text {
+  opacity: 1;
+  visibility: visible;
+}
+.instagram__item::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  
+  background:  #0d0d0d;
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  transition: all, 1s;
+ 
+ 
+}
+
+.instagram__text {
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all, 0.3s;
+}
+
+.instagram__text  {
+  font-size: 30px;
+ 
+  background-color:#ffffff;
+}
+
+.instagram__text a {
+  font-size: 16px;
+ 
+  font-weight: 500;
+  display: inline-flex;
+  margin: 0px 10px;
+  /* margin-top: 10px; */
+}
+.instagram__text img{
+    margin: 5px 0px;
+    transition: transform 1s;
+}
+.instagram__text img:hover{
+    transform: translate(0px,-10px);
+    filter: drop-shadow(10px 10px 4px black);
+}
+.col-md-4{
+    width: 300px;
+    height: 400px;
+    margin: 0px auto;
+    
+    margin: 10px 15px;
+    background-color: aliceblue;
+}
+.col-md-4 h1{
+    font-style: italic;
+    color: rgb(168, 168, 39);
+    margin: 5px 10px;
+}
+.row{
+    margin: 0px 100px;
+}
+/* animation: grow 2s ease infinite; */
+@keyframes mymove{
+	from{top:0px;}
+    to{top:10px;}
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="instagram" >
+        <h1 style="text-align: center; font-style: italic;">Browse Latest Arrivals</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-bgimg="2.jpg" >
+                        <div class="instagram__text">
+                            <i class="ion-social-instagram"></i>
+                            <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/shopping-basket-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/heart-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/aami-web-internet/64/simple-22-64.png" alt="" width="40px" height="40px"></a>
+
+          
+                        </div>
+                        
+                    </div>
+                    <h1>Earings</h1>
+                    <a href="https://wa.me/message/EP23MIAZIH3SN1" style="text-decoration: none; padding: 5px 20px; background-color: beige;margin: 0px 70px; animation: mymove 1s ease infinite; position: relative;"><img src="c:\Users\Max\Desktop\Ảrvind\Jewellery\image\whatsapp.webp" alt="" width="20px" height="20px"> Design Now</a>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-bgimg="7.jpg">
+                        <div class="instagram__text">
+                            <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/shopping-basket-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/heart-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/aami-web-internet/64/simple-22-64.png" alt="" width="40px" height="40px"></a>
+
+                       
+                        </div>
+                    </div>
+                    <h1>Pendel</h1>
+                    <a href="https://wa.me/message/EP23MIAZIH3SN1" style="text-decoration: none; padding: 5px 20px; background-color: beige;margin: 0px 70px;animation: mymove 1s infinite; position: relative;"><img src="c:\Users\Max\Desktop\Ảrvind\Jewellery\image\whatsapp.webp" alt="" width="20px" height="20px"> Design Now</a>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-bgimg="4.jpg">
+                        <div class="instagram__text">
+                            <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/shopping-basket-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/heart-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/aami-web-internet/64/simple-22-64.png" alt="" width="40px" height="40px"></a>
+
+          
+                        </div>
+                    </div>
+                    <h1>Earings</h1>
+                    <a href="https://wa.me/message/EP23MIAZIH3SN1" style="text-decoration: none; padding: 5px 20px; background-color: beige;margin: 0px 70px;animation: mymove 1s infinite; position: relative;"><img src="c:\Users\Max\Desktop\Ảrvind\Jewellery\image\whatsapp.webp" alt="" width="20px" height="20px"> Design Now</a>
+
+                </div>
+            
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-bgimg="04.jpeg">
+                        <div class="instagram__text">
+                            <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/shopping-basket-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/heart-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/aami-web-internet/64/simple-22-64.png" alt="" width="40px" height="40px"></a>
+
+          
+                        </div>
+                    </div>
+                    <h1>Earings</h1>
+                    <a href="https://wa.me/message/EP23MIAZIH3SN1" style="text-decoration: none; padding: 5px 20px; background-color: beige;margin: 0px 70px;animation: mymove 1s infinite; position: relative;"><img src="c:\Users\Max\Desktop\Ảrvind\Jewellery\image\whatsapp.webp" alt="" width="20px" height="20px"> Design Now</a>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-bgimg="1.jpg">
+                        <div class="instagram__text">
+                            <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/shopping-basket-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/heart-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/aami-web-internet/64/simple-22-64.png" alt="" width="40px" height="40px"></a>
+
+          
+                        </div>
+                    </div>
+                    <h1>Pendel</h1>
+                    <a href="https://wa.me/message/EP23MIAZIH3SN1" style="text-decoration: none; padding: 5px 20px; background-color: beige;margin: 0px 70px;animation: mymove 1s infinite; position: relative;"><img src="c:\Users\Max\Desktop\Ảrvind\Jewellery\image\whatsapp.webp" alt="" width="20px" height="20px"> Design Now</a>
+               
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+
+                    <div class="instagram__item set-bg" data-bgimg="6.jpg">
+                        <div class="instagram__text">
+                            <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/shopping-basket-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/heart-64.png" alt="" width="40px" height="40px"></a><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/aami-web-internet/64/simple-22-64.png" alt="" width="40px" height="40px"></a>
+
+          
+                        </div>
+                    </div>
+                    <h1>Pendel</h1>
+                    <a href="https://wa.me/message/EP23MIAZIH3SN1" style="text-decoration: none; padding: 5px 20px; background-color: beige;margin: 0px 70px;animation: mymove 1s infinite; position: relative;"><img src="c:\Users\Max\Desktop\Ảrvind\Jewellery\image\whatsapp.webp" alt="" width="20px" height="20px"> Design Now</a>
+               
+                </div>
+            </div>
+        </div>
+    
+    
+    </div>
+    <!------------------------------------------- script---------------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- JavaScript Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
